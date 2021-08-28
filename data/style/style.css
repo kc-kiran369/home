@@ -116,7 +116,7 @@ nav .container .links #contact a:hover{
 	
 /**************intro page***************/
 .intro{
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/background.jpg); 
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -202,6 +202,7 @@ nav .container .links #contact a:hover{
 	grid-template-columns: repeat(4, 22vw);
 	justify-content: space-evenly;
 	padding: 20px 0px;
+	row-gap: 5vh;
 }
 .body .container .column{
 	padding: 20px 5px;
