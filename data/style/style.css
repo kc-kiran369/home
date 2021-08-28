@@ -254,10 +254,10 @@ nav .container .links #contact a:hover{
 	font-size: 20px;
 	padding: 5px 0px;
 }
-.footer .container #column4 ul input ,.footer .container #column4 ul button{
+.footer .container #column4 ul .input ,.footer .container #column4 ul button{
 	width: 20vw;
 }
-.footer .container #column4 ul input{
+.footer .container #column4 ul .input{
 	color: black;
 	border: none;
 	outline: none;
