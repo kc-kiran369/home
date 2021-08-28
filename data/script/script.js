@@ -1,17 +1,23 @@
-function GoToMain() {
+function GoToMain() {	
 	var password = "kiran12345";
-
 	var input = document.querySelector(".password .container .input input").value;
-
-	if(input.toString() == password)
-	{
-		//enable main page
-		document.querySelector(".main").style.display = "inline";
-
-		//disable password page
-		document.querySelector(".password").style.display = "none";
+	var temp = sessionStorage.getItem("wasOpen");
+	if (temp!="yes") {
+		OpenPass();
 	}
 	else{
-		alert("Wrong password!!");
+		ClosePass();
 	}
+	if(input.toString() == password){
+		sessionStorage.setItem("wasOpen","yes");
+		ClosePass();
+	}
+}
+function OpenPass() {
+	document.querySelector(".main").style.display = "none";
+	document.querySelector(".password").style.display = "inline";
+}
+function ClosePass() {
+	document.querySelector(".main").style.display = "inline";
+	document.querySelector(".password").style.display = "none";
 }
