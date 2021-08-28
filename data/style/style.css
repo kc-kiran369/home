@@ -209,7 +209,7 @@ nav .container .links #contact a:hover{
 	border-radius: 1vw;
 }
 .body .container .column:hover{
-	transition: transform 0.3s linear;
+	transition: all 0.3s linear;
 	transform: scale(1.1);
 	border-radius: 0;
 }
