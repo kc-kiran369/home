@@ -20,6 +20,7 @@
 	background-image: url(../images/background2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: none;
 }
 .password .container{
 	position: absolute;
@@ -52,7 +53,7 @@
 /*************password**************/
 
 .main{
-	display: none;
+	display: inline;
 }
 
 /***************navigation bar**************/
@@ -151,6 +152,7 @@ nav .container .links #contact a:hover{
 	height: 60vh;
 	background-size: cover;
 	font-family: Staatliches;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .cards .container .column:hover{
 	transition: all 0.3s linear;
@@ -182,6 +184,51 @@ nav .container .links #contact a:hover{
 /**************intro page***************/
 
 
+/************body*********/
+.body{
+	background-image: url(../images/background4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px 0;
+}
+.body h1{
+	text-align: center;
+	color: white;
+	filter: blur(0.3px);
+}
+.body .container{
+	display: grid;
+	grid-template-columns: repeat(4, 22vw);
+	justify-content: space-evenly;
+	padding: 20px 0px;
+}
+.body .container .column{
+	padding: 20px 5px;
+	text-align: center;
+	background-color: rgba(255, 255, 255 , 0.3);
+	border-radius: 1vw;
+}
+.body .container .column:hover{
+	transition: transform 0.3s linear;
+	transform: scale(1.1);
+	border-radius: 0;
+}
+.body .container .column ul .heading{
+	padding: 10px 0px;
+	font-size: 25px;
+	color: rgb(200, 200, 200);
+}
+
+.body .container .column ul li a{
+	color: white;
+}
+.body .container .column ul li a:hover{
+	text-decoration: underline;
+}
+
+
+/************body*********/
+
 
 
 /**************footer ***************/
@@ -206,6 +253,9 @@ nav .container .links #contact a:hover{
 	font-weight: bold;
 	font-size: 20px;
 	padding: 5px 0px;
+}
+.footer .container #column4 ul input ,.footer .container #column4 ul button{
+	width: 20vw;
 }
 .footer .container #column4 ul input{
 	color: black;

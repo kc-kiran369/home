@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main .container {
+	background-image: url(../images/background3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.main .container .intro{
+	text-align: center;
+	padding: 50px;
+	color: white;
+}
+.main .container .intro h2{
+	font-size: 4em;
+}
+.image img{
+	width: 5em;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid white;
+	border-radius: 50%;
+}
