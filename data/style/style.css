@@ -11,6 +11,8 @@
 
 /*************password**************/
 .password{
+	display: inline;
+
 	z-index: 1;
 	position: fixed;
 	top: 0;
@@ -20,7 +22,6 @@
 	background-image: url(../images/background2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: none;
 }
 .password .container{
 	position: absolute;
@@ -42,7 +43,8 @@
 }
 .password .container .input input{
 	color: black;
-	padding: 5px 20px;	
+	padding: 5px 20px;
+	outline: none;
 }
 .password .container .btn button{
 	padding: 5px 40px;
@@ -53,7 +55,7 @@
 /*************password**************/
 
 .main{
-	display: inline;
+	display: none;
 }
 
 /***************navigation bar**************/
