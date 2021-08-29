@@ -72,10 +72,11 @@ nav .container{
 	grid-template-columns: repeat(2, 50vw);
 }
 nav .container .logo{
-	padding: 0px 30px;
+	padding: 0 30px;
 }
 nav .container .logo img{
 	width: 9vh;
+	display: inline;
 }
 nav .container .links{
 	position: absolute;
