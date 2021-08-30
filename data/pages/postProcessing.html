@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Post Processing
+	</title>
+	<link rel="stylesheet" type="text/css" href="../style/postProcessing.css">
+</head>
+<body>
+	<div class="body">
+		<nav class="nav">
+			<div class="contain">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="composition.html">Composition</a></li>
+					<li><a href="colorTheory.html">Color theory</a></li>
+					<li><a href="colorGrade.html">Color Grade</a></li>
+					<li><a class="active" href="/" onclick="return false">Post Processing</a></li>
+					<li><a href="lightning.html">Lightning</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="col1">
+				<ul>
+					<h2>Contents</h2>
+					<li><a href="#section1">post processing</a></li>
+					<li><a href="#section2">Some post processing effects</a></li>
+					<li><a href="#section3">Ambient Occlusion</a></li>
+					<li><a href="#section4">Depth of Field</a></li>
+					<li><a href="#section5">Bloom</a></li>
+					<li><a href="#section6">Vignette</a></li>
+					<li><a href="#section7">Chomatic Aberration</a></li>
+					<li><a href="#section8">Grain</a></li>
+				</ul>
+			</div>
+			<div class="col2">
+				<h2 id="section1">post processing</h2>
+				<p>The term post-processing (or postproc for short) is used in the video/film business for quality-improvement image processing (specifically digital image processing) methods used in video playback devices, such as stand-alone DVD-Video players; video playing software; and transcoding software. It is also commonly used in real-time 3D rendering (such as in video games) to add additional effects.</p>
+				<p>Additionally, post-processing is commonly used in 3D rendering, especially for video games. Instead of rendering 3D objects directly to the display, the scene is first rendered to a buffer in the memory of the video card. Pixel shaders and optionally vertex shaders are then used to apply post-processing filters to the image buffer before displaying it to the screen. Some post-processing effects also require multiple-passes, gamma inputs, vertex manipulation, and depth buffer access. Post-processing allows effects to be used that require awareness of the entire image (since normally each 3D object is rendered in isolation).</p>
+				<img src="../images/postProcessing/pic1.jpg">
+	
+				<h2 id="section2">Some post processing effects.</h2>
+	
+				<h2 id="section3">Ambient Occlusion</h2>
+				<p>The first effect is the Ambient Occlusion, it consists on perfecting and make shadows, holes and surfaces more realistic.</p>
+				<img src="../images/postProcessing/pic2.jpg">
+	
+				<h2 id="section4">Depth of Field</h2>
+				<img src="../images/postProcessing/pic3.jpg">
+				<p>It basically can simulate the properties of a real camera by blurring objects at a distance from the lens.
+				How to use it?
+				Increase blur intensity by decreasing aperture and increasing Focal Length.
+				Decrease the focal length if you want to focus on closer objects and zoom in on further objects.</p>
+	
+				<h2 id="section5">Bloom	</h2>
+				<img src="../images/postProcessing/pic4.jpg">
+				<p>Set the brightest points of light slightly “blurry”, making the player feels like it’s in paradise!
+				Choose the collor you want to the effect and keep adjusting it while you configure the following steps;
+				Set the Intensity to adjust the brightness level of the dots;
+				Adjust the Threshold to determine how bright the pixels affected by the lightpoint bloom will become (the higher the Threshold the smaller the effect on pixels);
+				Increase the Soft Knee if you want to smoother the Bloom.</p>
+	
+				<h2 id="section6">Vignette</h2>
+				<img src="../images/postProcessing/pic5.jpg">
+				<p> this is a well known effect, not only by its game applications, but also because it’s used in movies and pictures, maybe you have already used it sometime in your life. But if you haven’t, just know that the “Vignette” darkens the edge of your screen, so the center will be highlighted, it is usually used on dramatic works or ending scenes, you can find this kind of effect in old movies, like Charlie Chaplin’s ones.
+				If you want a softer effect (very important to games in first person, like Counter Strike):
+				Set the intensity between 0.2 e 0.35;
+				Smoothness to 0.5 (0.5 is a mid-value so it is perfect to a fast-flowing game, but in case you want a noticeable effect you can set it to the maximum value);
+				Set the roundness to 1 so you can make a well-rounded vignette.</p>
+
+				<h2 id="section7">Chomatic Aberration</h2>
+				<img src="../images/postProcessing/pic6.jpg">
+				<p>it creates light spectrums around the objects, it’s generally used to create an intoxication or poisoning effect (like Katniss Everdeen after being attacked by wasps in Hunger Games) or simply for artistic looking projects;
+				Adjust the intensity to configure the distortion level;
+				Change the color distortion standard by adding a different texture in “Spectral Texture” (there are 4 other standards included in the Post-process package)</p>
+
+				<h2 id="section8">Grain</h2>
+				<img src="../images/postProcessing/pic7.jpg">
+				<p>Simulates the effect that real world cameras produce when small particles in the film camera gives the image a rudimentary and unprocessed effect, is often used in games like Limbo and many others horror games.
+				The configurations are very intuitive:
+				Determine how visible the effect will be by regulating its intensity;
+				Adjust the size each grain should have in “Size”;
+				To determine the influence of scene lights on the image’s graininess adjust the value of the “Luminance Contribution” (the larger the graininess the camera will look at brighter places and vice versa)</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
