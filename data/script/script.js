@@ -1,3 +1,5 @@
+
+//session storage
 function GoToMain() {	
 	var password = "kiran12345";
 	var input = document.querySelector(".password .container .input input").value;
@@ -30,3 +32,18 @@ function ClosePass() {
 	document.querySelector(".main").style.display = "inline";
 	document.querySelector(".password").style.display = "none";
 }
+//session storage
+
+
+//side panel
+function ToggleSidePanel() {
+	if(document.querySelector(".sidePanel").style.display == "inline")
+	{
+		document.querySelector(".sidePanel").style.display = "none";
+		// document.querySelector(".3line").style.transform = rotate("90deg");
+	}
+	else{
+		document.querySelector(".sidePanel").style.display = "inline";
+	}
+}
+//side panel

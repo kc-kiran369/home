@@ -38,8 +38,9 @@
 	<nav>
 		<div class="container">
 			<div class="logo">
-				<img src="data/images/logo.png">
+				<button class="3line" onclick="ToggleSidePanel();"><label>&Congruent;</label></button>
 			</div>
+
 			<div class="links">
 				<div class="link active">
 					<a href="">Home</a>
@@ -62,6 +63,35 @@
 
 	<!-- ----------intro page--------- -->
 	<div class="intro">
+
+		<div class="sidePanel">
+			<div class="conta">
+				<div class="con">
+					<h2>Title</h2>
+					<ul>
+						<li><a href="/" onclick="return false">Links</a></li>
+						<li><a href="/" onclick="return false">Links</a></li>
+						<li><a href="/" onclick="return false">Links</a></li>
+						<li><a href="/" onclick="return false">Links</a></li>
+						<li><a href="/" onclick="return false">Links</a></li>
+					</ul>
+				</div>
+				<div class="con">
+					<h2>Title</h2>
+					<ul>
+						<li><a href="/" onclick="return false">links</a></li>
+						<li><a href="/" onclick="return false">links</a></li>
+						<li><a href="/" onclick="return false">links</a></li>
+						<li><a href="/" onclick="return false">links</a></li>
+						<li><a href="/" onclick="return false">links</a></li>
+					</ul>
+				</div>
+				<div class="closeBTN">
+					<a href="" onclick="ToggleSidePanel();">Close</a>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
 			<div class="texts">
 				<img src="data/images/logo.png">
@@ -95,7 +125,7 @@
 	<div class="body" id="body">
 		<h1>Start learning</h1>
 		<div class="container">
-			<div class="column">
+			<div class="column" id="qw">
 				<ul>
 					<li class="heading">Film & Photography</li>
 					<li><a href="data/pages/composition.html">Composition</a></li>
@@ -105,7 +135,7 @@
 					<li><a href="data/pages/lightning.html">Lightning</a></li>
 				</ul>
 			</div>
-			<div class="column">
+			<div class="column" id="poi">
 				<ul>
 					<li class="heading">Window's Tips</li>
 					<li><a href="">Activate window</a></li>

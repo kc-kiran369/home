@@ -72,11 +72,22 @@ nav .container{
 	grid-template-columns: repeat(2, 50vw);
 }
 nav .container .logo{
-	padding: 0 30px;
+	height: 10vh;
 }
-nav .container .logo img{
-	width: 9vh;
-	display: inline;
+nav .container .logo button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	outline: none;
+	font-size: 35px;
+	padding: 0 20px;
+	background-color: transparent;
+}
+nav .container .logo button:hover{
+	transition: transform 0.4s ease;
+	color: black;
+	transform: translateY(-50%) rotate(90deg);
 }
 nav .container .links{
 	position: absolute;
@@ -114,7 +125,6 @@ nav .container .links #contact a:hover{
 
 
 
-	
 /**************intro page***************/
 .intro{
 	background-image: url(../images/background.jpg); 
@@ -124,6 +134,55 @@ nav .container .links #contact a:hover{
 	height: 90vh;
 	position: relative;
 }
+
+	/*********************sidepanel******************/
+	.sidePanel{
+		display: none;
+	}
+	.sidePanel .conta{
+		position: absolute;
+		left: 0;
+		background-color: #17181C;
+		height: 90vh;
+		width: 20vw;
+		text-align: center;
+		padding: 10px 0;
+		overflow: hidden;
+	}
+	.sidePanel .conta .con{
+		border-bottom: 2px solid gray;
+	}
+	.sidePanel .conta .con h2{
+		color: #C8C8C8;
+	}
+	.sidePanel .conta .con ul li{
+		margin: 10px 0;
+	}
+	.sidePanel .conta .con ul li a{
+		padding: 5px 8vw;
+	}
+	.sidePanel .conta .con ul li a:hover{
+		background-color: #4E85E3;
+		color: black;
+	}
+	.closeBTN{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50% , -50%);
+		bottom: 0;
+	}
+	.closeBTN a{
+		padding: 20px 9vw;
+		background-color: #0B78E3;
+		font-family: Staatliches;
+		color: white;
+	}
+	.closeBTN a:hover{
+		background-color: #06509B;
+	}
+	/*********************sidepanel******************/
+	
+	
 .intro .container{
 	position: absolute;
 	top: 50%;
@@ -212,16 +271,14 @@ nav .container .links #contact a:hover{
 	border-radius: 1vw;
 }
 .body .container .column:hover{
-	transition: all 0.3s linear;
+	transition: all 0.2s ease-in;
 	transform: scale(1.1);
-	border-radius: 0;
 }
 .body .container .column ul .heading{
 	padding: 10px 0px;
 	font-size: 25px;
 	color: rgb(200, 200, 200);
 }
-
 .body .container .column ul li a{
 	color: white;
 }
