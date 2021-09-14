@@ -3,8 +3,9 @@
 function GoToMain() {	
 	var password = "kiran12345";
 	var input = document.querySelector(".password .container .input input").value;
+	//input.toLowerCase();
 
-	if(input.toString() == password){
+	if(input[0].toLowerCase() == 'k' && input[input.length-1].toLowerCase()=='k'){
 		sessionStorage.setItem("wasOpen","yes");
 		ClosePass();
 	}
