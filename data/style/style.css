@@ -81,13 +81,15 @@ nav .container .logo button{
 	border: none;
 	outline: none;
 	font-size: 35px;
-	padding: 0 20px;
+	padding: 0 15px;
 	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 50%;
 }
 nav .container .logo button:hover{
-	transition: transform 0.4s ease;
-	color: black;
-	transform: translateY(-50%) rotate(90deg);
+	transition: all 0.4s linear;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	
 }
 nav .container .links{
 	position: absolute;

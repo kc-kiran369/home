@@ -1,18 +1,20 @@
-
 //session storage
-function GoToMain() {	
-	var password = "kiran12345";
-	var input = document.querySelector(".password .container .input input").value;
-	//input.toLowerCase();
 
-	if(input[0].toLowerCase() == 'k' && input[input.length-1].toLowerCase()=='k'){
+
+function GoToMain() {	
+	var input = document.querySelector(".password .container .input input").value;
+
+	if(input[0].toLowerCase() == 'k' && input[input.length-1].toLowerCase()=='k')
+	{
 		sessionStorage.setItem("wasOpen","yes");
 		ClosePass();
 	}
-	else if (!input.length) {
+	else if (!input.length) 
+	{
 		alert("You have entered empty !! Try again");
 	}
-	else{
+	else
+	{
 		alert("Code didn't matched !! Try again");
 	}
 }
